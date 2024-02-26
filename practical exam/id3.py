@@ -70,11 +70,6 @@ def model_evaluation(y_pred,y_test):
 def main():
     data=toy_dataset()
     model= build_model(data)
-    # to visualize tree install both graphviz and pydotplus
-    dot_data = tree.export_graphviz(model, 'tree.dot',class_names=True)
-    graph = pydotplus.graph_from_dot_data(dot_data)
-    graph.write_png('tree.png')
-    print ("Your decision tree constructed successfully, check the current directory for tree.png")
     prediction_using_model(model)
 
 main()
