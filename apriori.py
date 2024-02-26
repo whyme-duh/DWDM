@@ -55,6 +55,7 @@ def association_rule(frequent_itemsets):
         quit
      
 def main():
+    print('hello')
     data=toy_dataset()
     frequent_itemsets=frequent_itemset(data)
     association_rule(frequent_itemsets)
