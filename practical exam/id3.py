@@ -63,7 +63,7 @@ def model_evaluation(y_pred,y_test):
     score = accuracy_score(y_test,y_pred)
     print('Decision Tree Accuracy :', score)
     print("Classification report:")
-    report=(classification_report(y_test, y_pred, output_dict=True))
+    report=(classification_report(y_test, y_pred, output_dict=True, zero_division=0))
     df = pd.DataFrame(report).transpose()
     display_html(df[['precision', 'recall', 'f1-score']].head (2))
 
