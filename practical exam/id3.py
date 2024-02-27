@@ -2,7 +2,6 @@ import pandas as pd
 from IPython.display import display_html
 from sklearn import tree
 from sklearn.tree import export_graphviz
-import pydotplus
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
 
 def toy_dataset():
